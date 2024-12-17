@@ -9,8 +9,9 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Image source={require("../assets/images/partial-react-logo.png")} style={styles.logo}/>
-      <Text>Welcome to React Native</Text>
+      <Image source={require("../assets/images/react-logo.png")} style={styles.logo}/>
+      <Text style={styles.h1}>Welcome to React Native</Text>
+      <Text>My first react app</Text>
     </View>
   );
 }
@@ -19,5 +20,10 @@ const styles= StyleSheet.create({
   logo:{
     width:200,
     height:200,
+  },
+  h1:{
+    fontSize:32,
+    fontWeight: 700
   }
+
 })
